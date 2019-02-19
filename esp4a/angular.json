@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "esp4a": {
+    "AngularyChart": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/esp4a",
+            "outputPath": "dist/AngularyChart",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "esp4a:build"
+            "browserTarget": "AngularyChart:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "esp4a:build:production"
+              "browserTarget": "AngularyChart:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "esp4a:build"
+            "browserTarget": "AngularyChart:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "esp4a-e2e": {
+    "AngularyChart-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +103,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "esp4a:serve"
+            "devServerTarget": "AngularyChart:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "esp4a:serve:production"
+              "devServerTarget": "AngularyChart:serve:production"
             }
           }
         },
@@ -123,5 +123,5 @@
       }
     }
   },
-  "defaultProject": "esp4a"
+  "defaultProject": "AngularyChart"
 }
